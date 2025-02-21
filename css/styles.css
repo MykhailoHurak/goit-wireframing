@@ -1,0 +1,354 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border: 1px solid red;
+}
+
+/* Button ------------------------------- */
+
+.button {
+    display: inline-block;
+    min-width: 130px;
+    padding: 11px 34px;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+/* Header ------------------------------- */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    margin-right: 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    display: block;
+    height: 60px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-item-link {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    /* width: 100%; */
+    height: 60px;
+    color: #18A0FB;
+}
+
+
+.enter {
+    display: flex;
+}
+
+.enter-login-button {
+    text-align: center;
+    margin-right: 12px;
+
+    display: inline-block;
+    min-width: 130px;
+    padding: 11px 34px;
+    border: 2px solid;
+    border-radius: 6px;
+
+    color: #ffffff;
+    background-color: #18A0FB;
+
+    border: 2px solid #18A0FB;
+    border-radius: 8px;
+
+    color: #18A0FB;;
+    background-color: #ffffff;
+    border-color: #18A0FB;
+}
+
+.enter-login-link {
+    color: inherit;
+}
+
+.enter-register-button {
+    text-align: center;
+
+    display: inline-block;
+    min-width: 130px;
+    padding: 11px 34px;
+    border: 2px solid;
+    border-radius: 6px;
+
+    color: #ffffff;
+    background-color: #18A0FB;
+
+    border: 2px solid #18A0FB;
+    border-radius: 8px;
+
+    color: #ffffff;
+    background-color: #18A0FB;
+    border-color: #18A0FB;
+}
+
+.enter-register-link {
+    color: inherit;
+}
+
+/* Hero --------------------------------- */
+
+.hero {
+    height: 680px;
+    padding-top: 350px;
+    text-align: center;
+
+    background-image: url(../img/hero/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffff7f;
+}
+
+.hero-title {
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 96px; 
+}
+
+.hero-button {
+    padding: 16px 52px;
+    font-size: 20px;
+
+    color: #ffffff;
+    background-color: #18A0FB;
+
+    border: 2px solid #18A0FB;
+    border-radius: 8px;
+}
+
+/* Section Advantages ---------------------- */
+
+.advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #e5ffe5;
+}
+
+.advantages-title {
+    margin-bottom: 24px;
+    text-align: start;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    width: calc((100% - 40px) / 2);
+
+    outline: 1px solid green;
+}
+
+.advantages-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 24px;
+}
+
+.advantages-item-title {
+    margin-bottom: 12px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.advantages-item-text {
+    margin-bottom: 12px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+
+}
+
+.advantages-item-button {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.29px;
+    text-align: center;
+    
+    color: #18A0FB;
+    background-color: #ffffff;
+}
+
+/* Examples --------------------------------- */
+
+.examples {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #ffff7f;
+}
+
+.examples-list-item {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.examples-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.examples-list-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.examples-list-item-text-box {
+    margin: 0;
+    width: calc((100% - 40px) / 2);
+
+    outline: 1px solid green;
+}
+
+.examples-list-item:nth-child(2n + 1) > .examples-list-item-box {
+    margin-left: 40px;
+}
+
+.examples-list-item:nth-child(2n) > .examples-list-item-box {
+    margin-right: 40px;
+}
+
+.examples-list-item-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;   
+}
+
+.examples-list-item-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;  
+}
+
+/* Clients */
+
+.clients {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #e5ffe5;
+}
+
+.clients-title {
+    margin-bottom: 24px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;    
+}
+
+.clients-description {
+    margin-bottom: 24px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;    
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px;
+    margin: 0 auto;
+
+    outline: 1px solid green;
+}
+
+.clients-list-item {
+    margin-right: 64px;
+}
+
+.clients-list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.clients-list-item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 48px;
+}

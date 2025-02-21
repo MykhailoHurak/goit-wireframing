@@ -4,127 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- <h1>Hello World!</h1> -->
-
     <!-- Header -->
     <header>
-        <nav>
-            <a href="">
-                <img src="./img/logo-photo.svg" alt="">
-            </a>
-    
-            <ul>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Community</li>
-                <li>Support</li>
-            </ul>
-    
-            <ul>
-                <li><a href="">Log in</a></li>
-                <li><a href="">Register</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navigation">
+                <div class="logo-menu">
+                    <a class="logo" href="">
+                        <img src="./img/logo-photo.svg" alt="">
+                    </a>
+            
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="">Features</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="">Pricing</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="">Community</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="">Support</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <ul class="enter">
+                    <li class="enter-login-button">
+                        <a class="enter-login-link" href="">Log in</a>
+                    </li>
+                    <li class="enter-register-button">
+                        <a class="enter-register-link" href="">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero -->
-    <section>
-        <h1>The largest community of photo enthusiasts</h1>
-        <a href="">Join us</a>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+            <a class="button hero-button" href="">Join us</a>
+        </div>
     </section>
 
-    <!-- Section 02 -->
-    <section>
-        <h2>Snap photos and share like never before</h2>
+    <!-- Section 02 Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages-title">Snap photos and share like <br> never before</h2>
 
-        <ul>
-            <li>
-                <h3>Sed ut perspiciatis</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                <a href="">Learn more</a>
-            </li>
-            <li>
-                <h3>Lorem ipsum dolor</h3>
-                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-                <a href="">Learn more</a>
-            </li>
-            <li>
-                <h3>Nemo enim ipsam</h3>
-                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-                <a href="">Learn more</a>
-            </li>
-            <li>
-                <h3>Tempor incididunt</h3>
-                <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-                <a href="">Learn more</a>
-            </li>
-        </ul>
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <h3 class="advantages-item-title">Sed ut perspiciatis</h3>
+                    <p class="advantages-item-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                    <a class="button advantages-item-button" href="">Learn more</a>
+                </li>
+                <li class="advantages-item">
+                    <h3 class="advantages-item-title">Lorem ipsum dolor</h3>
+                    <p class="advantages-item-text">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                    <a class="button advantages-item-button" href="">Learn more</a>
+                </li>
+                <li class="advantages-item">
+                    <h3 class="advantages-item-title">Nemo enim ipsam</h3>
+                    <p class="advantages-item-text">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                    <a class="button advantages-item-button" href="">Learn more</a>
+                </li>
+                <li class="advantages-item">
+                    <h3 class="advantages-item-title">Tempor incididunt</h3>
+                    <p class="advantages-item-text">Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                    <a class="button advantages-item-button" href="">Learn more</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Section 03 Advantages -->
-    <section>
-        <h2>Advantages</h2>
-        <ul>
-            <li>
-                <img src="./img/example-img-01.jpg" alt="Example Image 01" width="750" height="440">
-                <h3>Sed ut perspiciatis unde omnis</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-            </li>
-            <li>
-                <img src="./img/example-img-01.jpg" alt="Example Image 01" width="750" height="440">
-                <h3>Sed ut perspiciatis unde omnis</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-            </li>
-        </ul>
+    <!-- Section 03 Examples -->
+    <section class="examples">
+        <div class="container">
+            <!-- <h2 class="examples-title">Examples</h2> -->
+            <ul class="examples-list">
+                <li class="examples-list-item">
+                    <img class="examples-list-item-img" src="./img/example-img-01.jpg" alt="Example Image 01" width="580">
+                    <div class="examples-list-item-box">
+                        <h3 class="examples-list-item-title">Sed ut perspiciatis unde omnis</h3>
+                        <p class="examples-list-item-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                        </p>
+                    </div>
+                </li>
+                <li class="examples-list-item">
+                    <img class="examples-list-item-img" src="./img/example-img-01.jpg" alt="Example Image 01" width="580">
+                    <div class="examples-list-item-box">
+                        <h3 class="examples-list-item-title">Sed ut perspiciatis unde omnis</h3>
+                        <p class="examples-list-item-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Section 04  -->
-    <section>
-        <h2>You’re in good company</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    <!-- Section 04 Clients  -->
+    <section class="clients">
+        <div class="container">
+            <h2 class="clients-title">You’re in good company</h2>
+            <p class="clients-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 
-        <ul>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-            <li>
-                <img src="./img/example-img-02.jpg" alt="Example Image 02" width="173" height="76">
-            </li>
-        </ul>
+            <ul class="clients-list">
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+                <li class="clients-list-item">
+                    <img class="clients-list-item-img" src="./img/example-img-02.jpg" alt="Example Image 02" width="172" height="76">
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Section 05 -->
-    <section>
+    <!-- <section>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 
         <ul>
             <li><a href="">Join Today</a></li>
             <li><a href="">Contact us</a></li>
         </ul>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
         <ul>
             <li><a href="">Mobile app</a></li>
             <li><a href="">Community</a></li>
@@ -157,7 +189,7 @@
         </ul>
 
         <p>&#169; Photo, Inc. 2025. We love our users!</p>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
