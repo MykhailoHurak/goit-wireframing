@@ -34,6 +34,7 @@ img {
 
 body {
     font-family: Montserrat, sans-serif;
+    color: #000000;
     margin: 0;
 }
 
@@ -96,8 +97,14 @@ body {
     display: block;
     padding-top: 21px;
     padding-bottom: 21px;
-    /* width: 100%; */
     height: 60px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.29px;
+    text-align: center;
+    
     color: #18A0FB;
 }
 
@@ -106,9 +113,16 @@ body {
     display: flex;
 }
 
-.enter-login-button {
-    text-align: center;
+.enter-item:not(:last-child) {
     margin-right: 12px;
+} 
+
+.enter-login-button {
+    min-width: 130px;
+}
+
+.enter-login-link {
+    text-align: center;
 
     display: inline-block;
     min-width: 130px;
@@ -127,15 +141,14 @@ body {
     border-color: #18A0FB;
 }
 
-.enter-login-link {
-    color: inherit;
+.enter-register-button {
+    min-width: 130px;
 }
 
-.enter-register-button {
+.enter-register-link {
     text-align: center;
 
     display: inline-block;
-    min-width: 130px;
     padding: 11px 34px;
     border: 2px solid;
     border-radius: 6px;
@@ -149,10 +162,6 @@ body {
     color: #ffffff;
     background-color: #18A0FB;
     border-color: #18A0FB;
-}
-
-.enter-register-link {
-    color: inherit;
 }
 
 /* Hero --------------------------------- */
@@ -351,4 +360,160 @@ body {
 
 .clients-list-item:not(:nth-last-child(-n+4)) {
     margin-bottom: 48px;
+}
+
+/* Registration -------------------------------- */
+
+.registration {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #ffff7f;
+}
+
+.registration-box {
+    display: flex;
+    align-items: center;
+}
+
+.registration-description {
+    margin-right: 84px;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;    
+}
+
+.registration-list {
+    display: flex;
+}
+
+.registration-list-item-link-join {
+    padding: 16px 52px;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;  
+    
+    background-color: #18A0FB;
+    white-space: nowrap;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center; 
+    
+    color: #ffffff;
+}
+
+.registration-list-item-link-contact {
+    padding: 16px 52px;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;  
+    
+    background-color: #ffffff;
+    white-space: nowrap;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center; 
+    
+    color: #18A0FB;
+}
+
+.registration-list-item:not(:last-child) {
+    margin-right: 44px;
+}
+
+/* Footer -------------------------------- */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #e5ffe5;;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+.footer-menu-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-menu-left-item:not(:last-child) {
+    margin-right: 52px;
+}
+
+.footer-menu-left-item-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;  
+    
+    color: inherit;
+}
+
+.footer-logo {
+    margin: 0;
+}
+
+.footer-menu-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-menu-right-item:not(:first-child) {
+    margin-left: 72px;
+}
+
+.footer-menu-right-item-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;  
+    
+    color: inherit;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.footer-social-list-item:not(:last-child) {
+    margin-right: 21px;
+}
+
+.footer-copy {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;       
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
