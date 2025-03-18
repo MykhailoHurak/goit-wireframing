@@ -1,0 +1,43 @@
+.clients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e5ffe5;
+}
+
+.clients-title {
+  margin-bottom: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.clients-description {
+  margin-bottom: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
+
+.clients-list-item {
+  margin-right: 64px;
+}
+
+.clients-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.clients-list-item:not(:nth-last-child(-n+4)) {
+  margin-bottom: 48px;
+}/*# sourceMappingURL=clients.css.map */

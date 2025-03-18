@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border: 1px solid red;
+}
+
+/* Button ------------------------------- */
+
+.button {
+    display: inline-block;
+    min-width: 130px;
+    padding: 11px 34px;
+    border: 2px solid;
+    border-radius: 6px;
+}
+
+/* Header ------------------------------- */
+
+@import "./header.scss";
+
+/* Hero --------------------------------- */
+
+@import "./hero.scss";
+
+/* Section Advantages ---------------------- */
+
+@import "./advantages.scss";
+
+/* Examples --------------------------------- */
+
+@import "./examples.scss";
+
+/* Clients */
+
+@import "./clients.scss";
+
+/* Registration -------------------------------- */
+
+@import "./registration.scss";
+
+/* Footer -------------------------------- */
+
+@import "./footer.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
